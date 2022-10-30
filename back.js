@@ -9,8 +9,8 @@ fs.writeFile(process.env.HOMEDRIVE + process.env.HOMEPATH + "\\foobar_np.txt", c
 module.exports = () => {
     registerCallback((songInfo) => {
         let output = "stopped";
-        if (songInfo.title && songInfo.artist) {
-            output = songInfo.isPaused ? 'stopped' : (`playing: ${songInfo.artist} - ${songInfo.title}`);
+        if (songInfo.title && songInfo.artist && !songInfo.isPaused) {
+            output = `playing: ${songInfo.artist} - ${songInfo.title}`;
         }
         writeToFile(output);
     });
