@@ -3,7 +3,7 @@ const fs = require("fs");
 const { app } = require("electron");
 
 const writeToFile = (content) => {
-fs.writeFile(process.env.HOMEDRIVE + process.env.HOMEPATH + "\\foobar_np.txt", content, () => {});
+    fs.writeFile(process.env.HOMEDRIVE + process.env.HOMEPATH + "\\foobar_np.txt", content, () => {});
 };
 
 module.exports = () => {
