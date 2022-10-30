@@ -4,7 +4,7 @@ A plugin for [th-ch/youtube-music](https://github.com/th-ch/youtube-music) that 
 Created to be used with [gamesense-essentials](https://mtricht.github.io/gamesense-essentials/).
 
 ## Installation
-Before starting make sure th-ch/youtube-music is not currently running.
+Before starting make sure th-ch/youtube-music is closed.
 
 Disclaimer: installing the plugin like this is probably error prone and will probably make it disappear after an automatic update.
 
